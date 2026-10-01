@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="MiniShop.Gateway/MiniShop.Gateway.csproj" />
+  <Project Path="NotificationService.API/NotificationService.API.csproj" />
+  <Project Path="OrderService.API/OrderService.API.csproj" />
+  <Project Path="ProductService.API/ProductService.API.csproj" />
+</Solution>
