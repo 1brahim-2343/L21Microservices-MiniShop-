@@ -12,7 +12,7 @@ export async function getProducts() {
   return response.json();
 }
 
-export async function createOrder(productId, quantity) {
+export async function createOrder(productId, quantity, email) {
   const response = await fetch(
     `${API_URL}/orders`,
     {
@@ -24,7 +24,8 @@ export async function createOrder(productId, quantity) {
 
       body: JSON.stringify({
         productId,
-        quantity
+        quantity,
+        email
       })
     }
   );

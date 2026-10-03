@@ -45,6 +45,10 @@ function App() {
       "1"
     );
 
+    const email = window.prompt('Please enter your email',
+      "example@gmail.com"
+    );
+
     if (!quantityText)
       return;
 
@@ -70,7 +74,8 @@ function App() {
 
       const order = await createOrder(
         product.id,
-        quantity
+        quantity,
+        email
       );
 
       setMessage(
